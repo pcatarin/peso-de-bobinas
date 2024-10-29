@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso de Bobinas</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+    <script src="Assets/index.js" defer></script>
+</head>
+<body>
+    <main>
+        <header class="title" id="title">
+            <h1 id="titleP">Peso de Bobinas</h1>
+        </header>
+        <hr>
+
+        <form id="calcForm">
+            <section class="selection" id="selection">
+                <div class="selection-box" id="selection-box">
+                    <select name="selection-liga" id="selection-liga" class="selection-type">
+                        <option value="" disabled selected>--SELECIONE UMA LIGA--</option>
+                        <option value="2.72" id="opt1" class="opt">CBS - 3104</option>
+                        <option value="2.65" id="opt2" class="opt">CES - 5182</option>
+                        <option value="2.70" id="opt3" class="opt">-1100</option>
+                        <option value="2.70" id="opt4" class="opt">-8079</option>
+                    </select>
+                    <select name="selection-espula" id="selection-espula" class="selection-type">
+                        <option value="" disabled selected>--SELECIONE UM TIPO DE ESPULA--</option>
+                        <option value="Aço">-Aço</option>
+                        <option value="Aluminio">-Aluminio</option>
+                        <option value="Fibra">-Fibra</option>
+                        <option value="Papelão">-Papelão</option>
+                    </select>
+                </div>
+            </section>
+            <hr>
+            <section id="values-results" class="values-results">
+            
+                <section class="values" id="values">
+            
+                    <div class="inputValue">
+                        <label for="diamExt">Diâmetro Externo</label><br>
+                        <input type="text" id="diamExt">
+                    </div>
+                    <div class="inputValue">
+                        <label for="diamInt">Diâmetro Interno</label><br>
+                        <input type="text" id="diamInt">
+                    </div>
+                    <div class="inputValue">
+                        <label for="espessura">Espessura</label><br>
+                        <input type="text" id="espessura">
+                    </div>
+                    <div class="inputValue">
+                        <label for="largura">Largura</label><br>
+                        <input type="text" id="largura">
+                    </div>
+                    <button type="submit" class="btnCalc">Calcular</button>
+            
+                </section>
+                <section id="results">
+                    <span>Teste</span>
+                </section>
+            </section>
+        </form>
+
+
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 500px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: rgb(66, 66, 120);
+    color: bisque;
+    text-align: center;
+}
+
+.selection {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.selection-box {
+    display: flex;
+    gap: 5%;
+}
+
+.selection-type {
+    border-radius: 5px;
+    width: 17rem;
+    height: 2rem;
+}
+
+#selection-liga {
+    width: 12rem;
+}
+
+#opt1 {
+    background-color: rgb(31, 227, 31);
+}
+
+#opt2{
+    background-color: black;
+    color: bisque;
+}
+#opt3 {
+    background-color: rgb(233, 36, 36);
+}
+
+#values-results {
+    display: flex;
+    justify-content: space-between;
+}
+
+.values {
+    margin: 20px 0 0 10px;
+    text-align: left;
+}
+
+.inputValue {
+    margin: 10px 5px;
+    font-size: 1.3rem;
+}
+
+.inputValue input {
+    width: 08rem;
+    height: 1.7rem;
+}
+
+#results {
+    margin: auto;
+}
+
+.btnCalc {
+    margin: 10px 5px;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 10px;
+}

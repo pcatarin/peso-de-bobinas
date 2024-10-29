@@ -1,0 +1,11 @@
+{
+  "name": "peso-de-bobinas",
+  "version": "1.0.0",
+  "description": "Calculadora-de-peso-de-bobinas",
+  "main": "./Assets/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paulo_Catarin",
+  "license": "ISC"
+}
