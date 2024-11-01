@@ -5,8 +5,9 @@
 }
 
 main {
-    width: 500px;
-    height: 600px;
+    width: 100vw;
+    max-width: 500px;
+    height: 100vh;
     margin: 0 auto;
     background-color: rgb(66, 66, 120);
     color: bisque;
@@ -14,18 +15,24 @@ main {
 }
 
 .selection {
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
 .selection-box {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 5%;
 }
 
 .selection-type {
+    margin-bottom: 4%;
     border-radius: 5px;
     width: 17rem;
     height: 2rem;
