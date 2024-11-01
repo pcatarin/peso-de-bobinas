@@ -22,19 +22,24 @@ form.addEventListener('submit', function diametro (ev) {
     let valueDiamInt = parseFloat(diamIntValue.value)
     let valueLarg = parseFloat(largValue.value)
     let valueEspess = parseFloat(espessValue.value)
-
+    /*
     const compr = parseFloat ([pi/4 * (valueDiamExt**2 - valueDiamInt**2)] / (valueEspess * 1000))
     const comprAjus = Math.round(compr)
     const height = parseFloat(compr * valueEspess * valueLarg * optionValue)
     const heightAjus = Math.round(height)
-
-    alert(`Diametro interno: ${valueDiamInt}
+    */
+    
+    const compr = parseFloat ([pi * (valueDiamExt - valueDiamInt)**2] / (valueEspess * 4))
+    const comprAjus = Math.round(compr)
+    const height = parseFloat(compr * valueEspess * valueLarg * optionValue)
+    
+    alert(` Diametro interno: ${valueDiamInt}
            Diametro externo: ${valueDiamExt}
            Espessura: ${valueEspess}
            Largura: ${valueLarg}
            Densidade: ${optionValue}
-           Comprimento: ${compr}
-           Peso: ${height} Kg`
+           Comprimento: ${compr.toLocaleString('pt-br', {style: 'decimal'})}
+           Peso: ${height.toLocaleString('pt-br', {style: 'decimal'})} Kg`
     )
 
     diamExtValue.value = ""
